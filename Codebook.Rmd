@@ -1,0 +1,26 @@
+
+##Getting and Cleaning Data Course Project - Codebook
+
+###Author: Federico Navarro
+
+This Codebook is part of the Getting and Cleaning Data Course Project. The Project involves using data from SmartLab.
+The Readme.txt file contains the link to download the data from the Machine Learning Repository. 
+
+SmartLab conducted an experiment in which 30 people performed six different activities: walking, walking upstairs,
+walking downstairs, sitting, standing and laying. During the activities, data was collected using the Smartphone's 
+accelerometer and Gyroscope. SmartLab divided the data collected into two different datasets: train and test. The train
+dataset contains 70% of the observations randomly partitioned. The goal of this project is to obtain, clean and merge
+the train and test sets producing a tidy data and a summarized report. 
+
+In the data set, each observation contains the triaxal accelaration and estimated body acceleration, triaxal angular
+velocity from the gyroscope,time and frequency domain variables, the activity label and a subject identifier. For 
+the values obtain SmartLab also calculated the mean, the standard deviation, the median, the maximum and minimum, the 
+signal magnitude area, an energy measure, the interquartile range, signal entropy, an autorregresion coefficients, 
+correlation coeficcient between two signals, and index of the frecuency component with largest magnitude, a weighted
+average of hte frequency components to obtain a mean frequency, the skewness of the frequency domain, the kurtosis
+of the frequency domain, an energy of a frequency interval and the angle between vectors. 
+
+In this project, both train and test datasets were cleaned to extract the variables that contain the mean and standard 
+deviation of the values. Furthermore the activity and subject labels were added to each dataset. In addition, the variable
+labels were renamed to be descriptive and the test and train sets were merged. Finally, a tidy dataset summary was created 
+by each subject and activity. The script to perform this transformations can be found in the file run_analysis.r

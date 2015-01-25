@@ -1,0 +1,38 @@
+---
+README FILE: Getting and Cleaning Data Course Project
+Author: "Federico Navarro"
+---
+##Getting and Cleaning Data Course Project
+
+The data for the analysis has been collected in the following link: 
+
+  http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
+A detailed description of the dataset can be found in the following link: 
+
+
+	http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+The next inputs are required for the code to run correctly: 
+
+a. X_test.txt
+b. y_test.txt	
+c. activity_labels.txt
+d. features.txt
+e. subject_test.txt
+f. X_train.txt
+g. y_train.txt
+h. subject_train.txt
+	
+There is only one script that process first the test files and then the train test. It computes the next steps: 
+
+1. Read the local files for each input
+2. Includes the column names, subject and activity to each dataset (train and test)
+3. Obtaines the columns required for the analysis on each dataset: the mean and standard deviation of each variable
+4. Merges the train and test set
+5. Changes the column names to be descriptive
+6. Summarizes the data to create the tidy data file
+7. Exports the file "TidyDataSetSummary.txt" 
+
+The Tidy Data Set Summary includes for each subject and each activity the mean of 85 variables. 
+
